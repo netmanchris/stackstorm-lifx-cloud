@@ -19,7 +19,7 @@ from lib.actions import LifxCloudBaseAction
 class togglepower(LifxCloudBaseAction):
     def run(self, label=None, power=None, color=None, brightness=None):
         #send toggle command to LIFX cloud for specific light bulb
-        result = self.client.set_state(selector=label, power=power, color=color,
+        result = self.client.set_state(selector='label:{}'.format(label), power=power, color=color,
                                        brightness=brightness)
         if result[0]['status'] == 'ok':
             return (True, result)
