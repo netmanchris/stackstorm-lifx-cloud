@@ -18,7 +18,7 @@ from lib.actions import LifxCloudBaseAction
 
 class lightslookup(LifxCloudBaseAction):
     def run(self):
-        lights = self.listlights()
+        lights = self.list_lights()
         if isinstance(lights, list):
             lights_data = []
             for light in lights:
@@ -26,7 +26,7 @@ class lightslookup(LifxCloudBaseAction):
                     'id': light['id'],
                     'uuid': light['uuid'],
                     'label':light['label'],
-                    'power':light['is_stable'],
+                    'power':light['power'],
                     'color':light['color'],
                     'brightness': light['brightness']
                       }
