@@ -21,6 +21,7 @@ class PulseLights(LifxCloudBaseAction):
         #send toggle command to LIFX cloud for specific light bulb
         if label != 'all':
             label = 'label:{}'.format(label)
+        print (label)
         result = self.client.pulse_lights(selector=label, power_on=power_on,
                                           color=color,
                                        cycles=cycles, from_color=from_color)
