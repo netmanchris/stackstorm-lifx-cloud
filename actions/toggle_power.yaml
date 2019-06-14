@@ -1,0 +1,7 @@
+---
+name: toggle_power
+pack: lifxcloud
+description: change_power of registered lights from lifx cloud
+runner_type: python-script
+entry_point: toggle_power.py
+enabled: true
