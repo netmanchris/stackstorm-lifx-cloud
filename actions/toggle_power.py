@@ -17,7 +17,8 @@ from lib.actions import LifxCloudBaseAction
 
 
 class togglepower(LifxCloudBaseAction):
-    def run(self, label):
+    def run(self, label=None):
+        #send toggle command to LIFX cloud for specific light bulb
         result = self.client.toggle_power('label:{}'.format(label))
         return (True, result)
         #return (False, lights)
