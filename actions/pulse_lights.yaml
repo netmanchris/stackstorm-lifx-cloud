@@ -25,8 +25,8 @@ parameters:
     type: number
     description: number of cycles to pulse target light
     position: 3
-  power:
-    type: string
+  power_on:
+    type: boolean
     description: Target power state of the managed light "on" or "off"
     required: false
     position: 4
