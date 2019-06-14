@@ -9,7 +9,7 @@ parameters:
   label:
     type: string
     description: The label of the LIFX light you're trying to manage
-    required: false
+    required: true
     position: 0
   color:
     type: string
