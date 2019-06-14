@@ -21,4 +21,9 @@ parameters:
     description: Target brightness of the managed light between 0 and 1
     required: false
     position: 2
+  power:
+    type: string
+    description: Target power state of the managed light "on" or "off"
+    required: false
+    position: 3
 
