@@ -1,0 +1,33 @@
+---
+name: set_mood
+pack: lifxcloud
+description: change color and brightness of registered lights from lifx cloud
+runner_type: python-script
+enabled: true
+entry_point: set_mood.py
+parameters:
+  label:
+    type: string
+    description: The label of the LIFX light you're trying to manage
+    required: true
+    position: 0
+  color:
+    type: string
+    description: Specify target color of the managed light
+    required: false
+    position: 1
+  from_color:
+    type: string
+    description: Specify target color of the managed light
+    required: false
+    position: 2
+  cycles:
+    type: number
+    description: number of cycles to pulse target light
+    position: 3
+  power:
+    type: string
+    description: Target power state of the managed light "on" or "off"
+    required: false
+    position: 4
+
