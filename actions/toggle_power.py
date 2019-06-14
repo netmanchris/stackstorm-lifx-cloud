@@ -18,7 +18,7 @@ from lib.actions import LifxCloudBaseAction
 
 class togglepower(LifxCloudBaseAction):
     def run(self, label):
-        result = self.client.toggle_power('label%s'.format(label))
-        if result[0]['status'] == 'ok':
-            return (True, lights)
+        result = self.client.toggle_power('label:{}'.format(label))
+            if result[0]['status'] == 'ok':
+                return (True, lights)
         return (False, lights)
