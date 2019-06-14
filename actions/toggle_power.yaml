@@ -4,4 +4,10 @@ pack: lifxcloud
 description: change_power of registered lights from lifx cloud
 runner_type: python-script
 entry_point: toggle_power.py
+parameters:
+  label:
+    type: string
+    description: The label of the LIFX light you're trying to manage
+    required: true
+    position: 0
 enabled: true
