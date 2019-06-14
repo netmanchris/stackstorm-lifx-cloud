@@ -3,12 +3,13 @@ name: set_mood
 pack: lifxcloud
 description: change color and brightness of registered lights from lifx cloud
 runner_type: python-script
+enabled: true
 entry_point: set_mood.py
 parameters:
   label:
     type: string
     description: The label of the LIFX light you're trying to manage
-    required: false
+    required: true
     position: 0
   color:
     type: string
@@ -16,8 +17,8 @@ parameters:
     required: false
     position: 1
   brightness:
-    type: float
+    type: number
     description: Target brightness of the managed light between 0 and 1
     required: false
     position: 2
-enabled: true
+
