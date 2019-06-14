@@ -1,7 +1,7 @@
 ---
 ref: lifxcloud
 name: lifxcloud
-description: Lifx Integration Pack
+description: Lifx Cloud API Integration Pack
 keywords:
   - lifx
 version: 0.1.0
