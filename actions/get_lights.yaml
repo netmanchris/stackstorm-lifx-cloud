@@ -1,5 +1,5 @@
 ---
-name: get_fabrics
+name: get_lights
 pack: lifxcloud
 description: Get an array of registered lights from lifx cloud
 runner_type: python-script
