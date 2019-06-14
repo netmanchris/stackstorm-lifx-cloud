@@ -1,0 +1,6 @@
+---
+apitoken:
+  description: "personal developer token from https://cloud.lifx.com/"
+  type: "string"
+  secret: false
+  required: true
