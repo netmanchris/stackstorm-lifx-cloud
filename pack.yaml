@@ -4,7 +4,6 @@ name: lifxcloud
 description: Lifx Integration Pack
 keywords:
   - lifx
-  -
 version: 0.1.0
 python_versions:
   - "2"

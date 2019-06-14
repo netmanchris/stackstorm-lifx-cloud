@@ -35,3 +35,5 @@ class lightslookup(HpecfmBaseAction):
 
             return (True, lights_data)
         return (False, lights)
+git remote add origin https://github.com/netmanchris/stackstorm-lifx-cloud.git
+git push -u origin master
