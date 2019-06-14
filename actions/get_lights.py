@@ -13,15 +13,14 @@
 # __author__ = "@netmanchris"
 # __license__ = "Apache2.0"
 
-from lib.actions import HpecfmBaseAction
+from lib.actions import LifxCloudBaseAction
 
 
-class lightslookup(HpecfmBaseAction):
+class lightslookup(LifxCloudBaseAction):
     def run(self):
         lights = self.client.listlights()
         if isinstance(lights, list):
             lights_data = []
-            # Loop through cfm_fabrics and process fabrics
             for light in lights:
                 out ={
                     'id': light['id'],
@@ -35,5 +34,3 @@ class lightslookup(HpecfmBaseAction):
 
             return (True, lights_data)
         return (False, lights)
-git remote add origin https://github.com/netmanchris/stackstorm-lifx-cloud.git
-git push -u origin master
