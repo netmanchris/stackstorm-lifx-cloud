@@ -19,7 +19,7 @@ from lib.actions import LifxCloudBaseAction
 class PulseLights(LifxCloudBaseAction):
     def run(self, label='all', color=None, from_color=None, cycles=None,power_on=True):
         #send toggle command to LIFX cloud for specific light bulb
-        if label != 'all':
+        if label not 'all':
             label = 'label:{}'.format(label)
         result = self.client.pulse_lights(selector=label, power_on=power_on,
                                           color=color,
