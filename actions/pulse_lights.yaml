@@ -1,10 +1,10 @@
 ---
-name: set_mood
+name: pulse_lights
 pack: lifxcloud
-description: change color and brightness of registered lights from lifx cloud
+description: pulse registered lights from lifx cloud
 runner_type: python-script
 enabled: true
-entry_point: set_mood.py
+entry_point: pulse_lights.py
 parameters:
   label:
     type: string
