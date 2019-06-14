@@ -9,12 +9,12 @@ parameters:
   label:
     type: string
     description: The label of the LIFX light you're trying to manage
-    required: true
+    required: false
     position: 0
   color:
     type: string
     description: Specify target color of the managed light
-    required: false
+    required: true
     position: 1
   from_color:
     type: string
